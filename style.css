@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(211, 207, 207);
+    /* width: 250px; */
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 10px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 30px 0 0 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infocontainer {
+    /* background-color: blue; */
+    height: 45vh;
+    width: 70vw;
+    margin: 144px 175px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+    font-size: 3em;
+}
+
+.name {
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about {
+    font-size: 2em;
+}
+
+.btn.btn-sm {
+    margin: 10px;
+    padding: 10px;
+    height: 40px;
+    width: 100px;
+    font-size: small;
+    text-align: center;
+}
+
+.moreabout {
+    font-size: 10px;
+    margin-top: 2em;
+}
+
+.buttons {
+    margin: 2.2em;
+    font-size: 5px;
+}
+
+.btn {
+    padding: 9px 14px;
+    border-radius: 20px;
+    background-color: dodgerblue;
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+.devpic img {
+    height: 45vh;
+    position: relative;
+    animation-name: talib;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes talib {
+    from {
+        height: 10vh;
+    }
+
+    to {
+        height: 45vh;
+    }
+}
+
+.contactform {
+    padding: 35px;
+    /* padding-top: 144px; */
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0 150px;
+}
+
+.contactform h1 {
+    font-family: 'Source Code Pro', monospace;
+    /* padding: 12px 0; */
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form {
+    margin: 0 40px;
+}
+
+#emailHelp {
+    font-size: 8px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+
+.contactform form div input {
+    /* width: 26vw; */
+    border-radius: 5px;
+    margin: 6px 0 0 o;
+    padding: 3px;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+.blogitem {
+    margin: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.blogcontainer {
+    margin: 0 160px;
+}
+
+.blogcontainer h1 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 23px;
+}
+
+.blogitem p {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.introcontainer {
+    margin: 0 165px;
+}
+
+.introcontainer h2 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 23px;
+}
+
+.introcontainer p {
+    font-family: 'Source Code Pro', monospace;
+    margin: 23px;
+}
+
+.skillcontainer {
+    padding: 12px;
+    position: relative;
+    animation-name: talib1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes talib1 {
+
+    from {
+        width: 50px;
+    }
+
+    to {
+        width: 190px;
+    }
+}
+.skillitem {
+    display: flex;
+    align-items: center;
+}
+
+.skill {
+    text-align: center;
+    margin: 10px;
+    height: 17px;
+    width: 265px;
+    /* background-color: red; */
+    border: 2px solid black;
+    border-radius: 6px;
+    color: white;
+}
+.t90 {
+    width: 190px;
+    background-color: green;
+}
+
+.t80 {
+    width: 180px;
+    background-color: blue;
+}
+
+.t50 {
+    width: 150px;
+    background-color: orange;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham {
+    width: 23px;
+}
+
+.cross {
+    margin-left: 130px;
+    width: 30px;
+}
+
+@media (max-width: 1030px) {
+    * {
+        /* background-color: red; */
+    }
+
+    .devinfo {
+        font-size: 10px;
+    }
+
+    .devpic {
+        display: none;
+    }
+
+    .introcontainer,
+    .blogcontainer,
+    .contactform,
+    .infocontainer {
+        margin: 70px 8px;
+    }
+}
